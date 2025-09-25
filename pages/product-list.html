@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <!-- Banner -->
+        <div class="bg-secondary-100 py-7 d-flex justify-content-center position-relative overflow-hidden">
+            <div class="main-contain d-lg-flex align-items-lg-center">
+                <!-- 產品分類 -->
+                <div class="hero-section flex-shrink-0">
+                    <span class="mb-0 text-white text-center naikai-normal h3 text-nowrap">產品分類</span>
+                </div>
+                <!-- 孩童圖片(sm-hide) -->
+                <div class="children-image d-none d-lg-block"> <img src="/assets/images/Group 7.png" alt="孩童玩樂照片">
+                </div>
+            </div>
+
+            <!-- 左上裝飾-格子(sm-hide) -->
+            <div class="grid d-none d-lg-block position-absolute translate top-0 start-0"> <img
+                    src="/assets/images/element-grid.svg" alt="左上裝飾-格子">
+            </div>
+            <!-- 右上裝飾-線條(sm-hide) -->
+            <div class="sticks d-none d-lg-block position-absolute translate top-0 end-0"> <img
+                    src="/assets/images/element-sticks.svg" alt="左上裝飾-線條">
+            </div>
+            <!-- 右下裝飾-波浪(sm-hide) -->
+            <div class=" wave d-none d-lg-block position-absolute translate bottom-0 end-0"> <img
+                    src="/assets/images/element-wave.svg" alt="左上裝飾-波浪">
+            </div>
+        </div>
+        <!-- content -->
+        <div class="container py-7 py-lg-11">
+            <!-- 手機版下拉選單 -->
+            <div class="mb-5 sidebar d-block d-lg-none">
+                <div class="sidebar-heading d-flex p-5 justify-content-start align-items-center bg-primary-200 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#categoryList" role="button" aria-expanded="false"
+                    aria-controls="categoryList">
+                    <img class="img-fluid me-3" src="/assets/images/icon-triangle.svg" alt="Vector" />
+                    <div class="my-3">產品分類</div>
+                </div>
+                <ul class="nav flex-column collapse" id="categoryList">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex p-5 justify-content-start align-items-center" href="#">
+                            <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                            <div>新品報到</div>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center" href="#">
+                            <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                            <div>冠軍排名</div>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center collapsed"
+                            data-bs-toggle="collapse" href="#saleSubmenu" role="button" aria-expanded="false"
+                            aria-controls="saleSubmenu">
+                            <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                            <div>限時搶購</div>
+
+                            <span class="ms-auto">
+                                <i class="bi bi-chevron-down icon-down"></i>
+                                <i class="bi bi-chevron-up icon-up"></i>
+                            </span>
+                        </a>
+                        <div class="collapse" id="saleSubmenu">
+                            <ul class="nav flex-column ps-8">
+                                <li class="nav-item">
+                                    <a class="nav-link p-3" href="#">超殺品項．全面88折</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-3" href="#">週年慶．滿千折百</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center" href="#">
+                            <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                            <div>創意積木</div>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center active"
+                            href="#">
+                            <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                            <div>美術繪本</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- breadcrumb -->
+            <div class="mb-5">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                        <li class="breadcrumb-item"><a href="#">親子學 - 共學積木系列</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">創意積木系列</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- side-bar 電腦板 -->
+                    <div class="d-none d-lg-block">
+                        <div class="sidebar">
+                            <div
+                                class="sidebar-heading d-flex p-5 justify-content-start align-items-center bg-primary-200">
+                                <img class="img-fluid me-3" src="/assets/images/icon-triangle.svg" alt="Vector" />
+                                <div>產品分類</div>
+                            </div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex p-5 justify-content-start align-items-center" href="#">
+                                        <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                                        <div>新品報到</div>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center"
+                                        href="#">
+                                        <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                                        <div>冠軍排名</div>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center collapsed"
+                                        data-bs-toggle="collapse" href="#saleSubmenu" role="button"
+                                        aria-expanded="false" aria-controls="saleSubmenu">
+                                        <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                                        <div>限時搶購</div>
+
+                                        <span class="ms-auto">
+                                            <i class="bi bi-chevron-down icon-down"></i>
+                                            <i class="bi bi-chevron-up icon-up"></i>
+                                        </span>
+                                    </a>
+                                    <div class="collapse" id="saleSubmenu">
+                                        <ul class="nav flex-column ps-8">
+                                            <li class="nav-item">
+                                                <a class="nav-link p-3" href="#">超殺品項．全面88折</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-3" href="#">週年慶．滿千折百</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center"
+                                        href="#">
+                                        <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                                        <div>創意積木</div>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-link d-flex p-5 justify-content-start align-items-center active"
+                                        href="#">
+                                        <img class="img-fluid me-4" src="/assets/images/Vector.svg" alt="Vector" />
+                                        <div>美術繪本</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <!-- card -->
+                    <div class="mb-5">
+                        <div class="card bg-secondary-100 rounded-5">
+                            <div class="p-5 card-body">
+                                <h5 class="card-title h6 mb-3 text-primary-600">積木．孩子成長的創造夥伴</h5>
+                                <p class="card-text small">在忙碌的生活中，沒有什麼比和孩子一起動手拼積木更有意義了。
+                                    無論是親子共創一座夢想城堡，還是孩子獨立完成一個太空基地，PlayGrow親子學共學積木系列都提供多種造型與玩法，滿足孩子對創造世界的無限想像。 選擇PlayGrow
+                                    親子學，輕鬆打造專屬於你們的學習時光，享受從玩中學、從學中玩的高品質共學體驗。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product-card -->
+                    <div class="mb-5 row row-cols-1 row-cols-md-3 g-5">
+                        <div class="col">
+                            <div class="card p-5 rounded-4 h-100">
+                                <div class="position-relative">
+                                    <img src="/assets/images/product-1.png" class="card-img-top mb-4 rounded-4"
+                                    alt="product-1">
+                                    <span
+                                        class="badge position-absolute translate-middle p-3 bg-white rounded-circle"><i class="bi bi-heart text-primary fs-5 fw-bold"></i>
+                                    </span>
+                                </div>
+                                <div class="card-body p-0">
+                                    <h6 class="card-title fs-7 mb-2 nature-700">感官教具積木組</h6>
+                                    <p class="card-text text-primary-600 fw-bold">NTD 5,161</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-5 rounded-4 h-100">
+                                <img src="/assets/images/product-2.png" class="card-img-top mb-4 rounded-4"
+                                    alt="product-2">
+                                <div class="card-body p-0">
+                                    <h6 class="card-title fs-7 mb-2 nature-700">感官教具積木組</h6>
+                                    <p class="card-text text-primary-600 fw-bold">NTD 19,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-5 rounded-4 h-100">
+                                <img src="/assets/images/product-3.png" class="card-img-top mb-4 rounded-4"
+                                    alt="product-3">
+                                <div class="card-body p-0">
+                                    <h6 class="card-title fs-7 mb-2 nature-700">感官教具積木組</h6>
+                                    <p class="card-text text-primary-600 fw-bold">NTD 18,800</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-5 rounded-4 h-100">
+                                <img src="/assets/images/product-4.png" class="card-img-top mb-4 rounded-4"
+                                    alt="product-4">
+                                <div class="card-body p-0">
+                                    <h6 class="card-title fs-7 mb-2 nature-700">和本 - 動物世界積木拼圖</h6>
+                                    <p class="card-text text-primary-600 fw-bold">NTD 2,280</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-5 rounded-4 h-100">
+                                <img src="/assets/images/product-5.png" class="card-img-top mb-4 rounded-4"
+                                    alt="product-5">
+                                <div class="card-body p-0">
+                                    <h6 class="card-title fs-7 mb-2 nature-700">SKIN - 太空任務磁性積木組</h6>
+                                    <p class="card-text text-primary-600 fw-bold">NTD 4,200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Pagination -->
+            <div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center border-0 gap-lg-5">
+                        <li class="page-item pe-lg-5">
+                            <a class="page-link nature-900" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><img src="/assets/images/icon-Left Arrow.svg"
+                                        alt="Left Arrow"></span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link nature-900" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link nature-900" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link nature-900" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link nature-900" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link nature-900" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link nature-900" href="#">6</a></li>
+                        <li class="page-item">
+                            <a class="page-link nature-900" href="#" aria-label="Next">
+                                <span aria-hidden="true"><img src="/assets/images/icon-Right Arrow.svg"
+                                        alt="Right Arrow"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js">
+            </script>
+
+</body>
+
+</html>

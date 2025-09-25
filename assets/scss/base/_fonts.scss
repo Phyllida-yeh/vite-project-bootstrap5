@@ -1,0 +1,37 @@
+/* 定義 NaikaiFont 的一般字重 */
+@font-face {
+  font-family: 'NaikaiFont-JP';
+  src: url('/assets/fonts/NaikaiFont-Regular.woff2') format('woff2'),
+       url('/assets/fonts/NaikaiFont-Regular.woff') format('woff');
+  font-weight: 400; /* 或 "normal" */
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'NaikaiFont-JP';
+  src: url('/assets/fonts/NaikaiFont-SemiBold.woff') format('woff');
+}
+
+
+/* 定義 NaikaiFont 的半粗體字重 */
+@font-face {
+  font-family: 'NaikaiFont-JP';
+  src: url('/assets/fonts/NaikaiFont-SemiBold.woff2') format('woff2'),
+       url('/assets/fonts/NaikaiFont-SemiBold.woff') format('woff');
+  font-weight: 600; /* 或 "semibold" */
+  font-style: normal;
+}
+
+/* 建立一個專門給標題使用的類別 */
+/* 用於標題，使用半粗體 */
+.naikai-title {
+  font-family: 'NaikaiFont-JP', sans-serif;
+  font-weight: 600;
+}
+
+/* 用於內文或需要一般字重的標題 */
+.naikai-normal {
+  font-family: 'NaikaiFont-JP', sans-serif;
+  font-weight: 400;
+}
