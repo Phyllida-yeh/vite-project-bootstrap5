@@ -96,3 +96,12 @@ a:not(.collapsed) .icon-down {
     top: 5%;
     left: 95%;
 }
+
+.tag {
+    left: 5% !important;
+    top: 5% !important;
+    min-width: 85px;
+    justify-content: center;
+}
+
+
